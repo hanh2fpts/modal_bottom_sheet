@@ -255,9 +255,7 @@ class CupertinoSheetBottomRouteTransition extends StatelessWidget {
       curve: _kCupertinoTransitionCurve,
     );
 
-    return AnnotatedRegion<SystemUiOverlayStyle>(
-      value: SystemUiOverlayStyle.light,
-      child: AnimatedBuilder(
+    return AnimatedBuilder(
         animation: secondaryAnimation,
         child: body,
         builder: (BuildContext context, Widget? child) {
@@ -294,8 +292,7 @@ class CupertinoSheetBottomRouteTransition extends StatelessWidget {
             ],
           );
         },
-      ),
-    );
+      );
   }
 }
 
